@@ -12,6 +12,9 @@ alias htdocs='cd /Applications/MAMP/htdocs/'
 alias la='ls -a'
 alias ll='ls -l'
 
+# show my notes on bash
+alias examples="cat ${HOME}/bash_examples.sh"
+
 #show hidden files in finder
 alias show='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
 alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder'
