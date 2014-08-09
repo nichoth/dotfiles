@@ -16,6 +16,10 @@
 	unstage = reset --
 	slog = log --graph --oneline --all --decorate
 	s = status
+
+	# View the current working tree status using the short format
+	ss = status -s
+
 	co = checkout
 	wdiff = diff --color-words
 	logad = log --pretty=format:'%C(yellow)%h %Creset %ad %an %Cgreen%d %Creset%s' --date=short

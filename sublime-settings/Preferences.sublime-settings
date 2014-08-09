@@ -13,6 +13,22 @@
 
   "trim_automatic_white_space": true,
 
+  "file_exclude_patterns":
+  [
+    ".DS_Store",
+    "Desktop.ini",
+    "*.pyc",
+    "._*",
+    "Thumbs.db",
+    ".Spotlight-V100",
+    ".Trashes"
+  ],
+
+  "folder_exclude_patterns":
+  [
+    ".git"
+  ],
+
   "word_wrap": false,
 
   "scroll_past_end": true,
