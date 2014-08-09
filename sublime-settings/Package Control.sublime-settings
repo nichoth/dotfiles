@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"4GL",
+		"Colorsublime",
+		"DocBlockr",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
+		"Markdown Preview",
+		"Python PEP8 Autoformat",
+		"Sass",
+		"Siteleaf Liquid Syntax",
+		"SublimeLinter",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-pep8"
+	]
+}
