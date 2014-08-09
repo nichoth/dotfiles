@@ -1,0 +1,25 @@
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[user]
+	name = nichoth
+	email = nichoth@gmail.com
+[core]
+	editor = nano
+	excludesfile = /Users/nick/.gitignore_global
+	#pager = less -+S
+[merge]
+	tool = opendiff
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[alias]
+	unstage = reset --
+	slog = log --graph --oneline --all --decorate
+	s = status
+	co = checkout
+	wdiff = diff --color-words
+	logad = log --pretty=format:'%C(yellow)%h %Creset %ad %an %Cgreen%d %Creset%s' --date=short
+	loga = log --pretty=format:'%C(yellow)%h%x09%Creset%an%x09%s'
+	logo = log --oneline
+[push]
+	default = simple
