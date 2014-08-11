@@ -18,6 +18,7 @@ alias objdump="gobjdump -M intel"
 alias sc='cd ~/Desktop/slow\ clouds/'
 alias htdocs='cd /Applications/MAMP/htdocs/'
 alias dot="cd ${HOME}/.dotfiles"
+alias spref="cd /Users/nick/Library/Application Support/Sublime Text 3/Packages/User"
 
 # ls
 alias la='ls -a'
