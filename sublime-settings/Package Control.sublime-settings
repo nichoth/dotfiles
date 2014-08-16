@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"4GL",
+		"Auto Semi-Colon",
 		"Colorsublime",
 		"DocBlockr",
 		"Emmet",
@@ -15,6 +16,7 @@
 		"SublimeLinter-csslint",
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
-		"SublimeLinter-pep8"
+		"SublimeLinter-pep8",
+		"TrailingSpaces"
 	]
 }
