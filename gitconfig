@@ -5,7 +5,7 @@
 	name = nichoth
 	email = nichoth@gmail.com
 [core]
-	editor = nano
+	editor = vim
 	excludesfile = /Users/nick/.gitignore_global
 	#pager = less -+S
 [merge]
