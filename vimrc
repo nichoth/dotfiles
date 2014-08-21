@@ -25,6 +25,7 @@ if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
   set backup		" keep a backup file
+  set backupdir=~/.tmp
 endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
@@ -52,6 +53,10 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+set background=dark
+colorscheme solarized
+" let g:solarized_termcolors=256
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -94,3 +99,12 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+
+" Custom Part
+set smartcase
+set tabstop=4
+
+" Shortcut - enter inserts new line in command mode
+nmap <CR> o<Esc>j
+

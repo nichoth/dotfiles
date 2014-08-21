@@ -23,6 +23,7 @@ alias spref="cd /Users/nick/Library/Application\ Support/Sublime\ Text\ 3/Packag
 # ls
 alias la='ls -a'
 alias ll='ls -l'
+#alias ls='ls -F' # show trailing slashes on directories
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
@@ -92,8 +93,18 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
 # Prompt
+function parse_git_branch () {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+BRIGHTYELLOW="\[\033[38;5;214m\]"
+
 #export PS1='\[\033[00m\]\W\[\[\033[38;5;214m\]$(__git_ps1 " (%s)")\[\033[00m\] \[\033[0;33m\]\u\[\033[00m\]$ '
-export PS1='\[\033[0;33m\]\W\[\033[38;5;214m\]$(__git_ps1 "(%s)")\[\033[00m\]\[\033[00m\] \u\$ '
+
+export PS1='\[\033[0;33m\]\W\[\033[38;5;214m\]$(__git_ps1 "(%s)")\[\033[00m\] \u\$ '
+
 #export PS1='\W\[\033[38;5;214m\]$(__git_ps1 "(%s)")\[\033[00m\] \u\$ '
 
 #for globbing
