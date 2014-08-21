@@ -93,10 +93,6 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
 # Prompt
-function parse_git_branch () {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 BRIGHTYELLOW="\[\033[38;5;214m\]"

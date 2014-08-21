@@ -102,9 +102,47 @@ endif
 
 
 " Custom Part
+
+" Ignore case when searching
+set ignorecase
 set smartcase
 set tabstop=4
 
 " Shortcut - enter inserts new line in command mode
 nmap <CR> o<Esc>j
 
+" No line-wrapping
+set nowrap
+
+" start scrolling slightly before the cursor reaches an edge
+set scrolloff=3
+set sidescrolloff=5
+
+" Scroll sideways a character at a time, rather than a screen at a time
+set sidescroll=1
+
+" Underscores denote words
+set iskeyword-=_
+
+" Set relative line numbers if we can...
+if exists("+relativenumber")
+  " Due to a problem with relative line numbers not persisting across new
+  " tabs and splits, set no line numbers at all...
+  set nonumber
+  " ..then set relative ones.
+  set relativenumber
+" ...otherwise let’s just have regular ones.
+else
+  set number
+endif
+
+" Limit line-length to 80 columns by highlighting col 81 onward
+if exists("+colorcolumn")
+  set colorcolumn=81
+endif
+
+" Highlight current line
+set cursorline
+
+" Don’t keep results highlighted after searching
+set nohlsearch
