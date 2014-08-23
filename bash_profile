@@ -24,6 +24,7 @@ alias spref="cd /Users/nick/Library/Application\ Support/Sublime\ Text\ 3/Packag
 alias la='ls -a'
 alias ll='ls -l'
 #alias ls='ls -F' # show trailing slashes on directories
+alias lh='ls -d .??*' # show only hidden files
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."

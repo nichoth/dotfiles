@@ -18,6 +18,26 @@ endif
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+
+" -------------------------
+"  Stuff for vundle
+"  ------------------------
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" --------------------------
+
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+
+call vundle#end()            " required
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
