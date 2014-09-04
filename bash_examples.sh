@@ -17,3 +17,12 @@ for file in `ls`;
 do
   echo "$file";
 done
+
+
+# Print something a bunch
+perl -e 'print "a\n" x 20;'
+
+
+
+
+

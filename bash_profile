@@ -1,6 +1,7 @@
 # https://github.com/mathiasbynens/dotfiles
 
 #colors
+#
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
@@ -26,6 +27,18 @@ alias ll='ls -l'
 #alias ls='ls -F' # show trailing slashes on directories
 alias lh='ls -d .??*' # show only hidden files
 
+# tree
+alias tree='tree -C'
+
+# diff
+# alias diff='/usr/bin/diff -u'
+
+
+# function diff {
+#    /usr/bin/diff -u "$@" | colordiff;
+# }
+
+
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
@@ -41,6 +54,10 @@ alias examples="cat ${HOME}/.dotfiles/bash_examples.sh"
 #show hidden files in finder
 alias show='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
 alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder'
+
+# ftp server
+alias startftp='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
+alias stopftp='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 
 #copies the working path to the clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy"
@@ -78,6 +95,8 @@ function json() {
 function stree() {
   tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+
 
 
 

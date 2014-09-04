@@ -5,6 +5,7 @@
 		"Auto Semi-Colon",
 		"Colorsublime",
 		"DocBlockr",
+		"EditorConfig",
 		"Emmet",
 		"HTML-CSS-JS Prettify",
 		"Markdown Preview",
@@ -17,6 +18,7 @@
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
 		"SublimeLinter-pep8",
+		"Text Pastry",
 		"TrailingSpaces"
 	]
 }
