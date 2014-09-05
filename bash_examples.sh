@@ -22,6 +22,10 @@ done
 # Print something a bunch
 perl -e 'print "a\n" x 20;'
 
+# resize images
+# -Z tells it to maintain the image's aspect ratio. "640" is the 
+# maximum height and width to be used.
+sips -Z 640 *.jpg
 
 
 
