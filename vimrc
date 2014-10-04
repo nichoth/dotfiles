@@ -157,7 +157,7 @@ else
   set number
 endif
 
-" Limit line-length to 80 columns by highlighting col 81 onward
+" Limit line-length to 78 columns by highlighting col 79 onward
 if exists("+colorcolumn")
   set colorcolumn=78
 endif

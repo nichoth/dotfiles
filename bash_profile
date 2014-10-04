@@ -27,6 +27,9 @@ alias ll='ls -l'
 #alias ls='ls -F' # show trailing slashes on directories
 alias lh='ls -d .??*' # show only hidden files
 
+# List only directories
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+
 # tree
 alias tree='tree -C --dirsfirst'
 
