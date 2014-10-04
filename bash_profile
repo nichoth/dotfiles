@@ -16,7 +16,7 @@ alias objcopy="gobjcopy"
 alias objdump="gobjdump -M intel"
 
 #shortcuts
-alias sc='cd ~/Desktop/slow\ clouds/'
+alias cnc='cd ~/Desktop/fall-2014/'
 alias htdocs='cd /Applications/MAMP/htdocs/'
 alias dot="cd ${HOME}/.dotfiles"
 alias spref="cd /Users/nick/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
@@ -28,11 +28,13 @@ alias ll='ls -l'
 alias lh='ls -d .??*' # show only hidden files
 
 # tree
-alias tree='tree -C'
+alias tree='tree -C --dirsfirst'
 
 # diff
 # alias diff='/usr/bin/diff -u'
 
+# ssh to ada
+alias ada='ssh thonic29@ada.evergreen.edu'
 
 # function diff {
 #    /usr/bin/diff -u "$@" | colordiff;

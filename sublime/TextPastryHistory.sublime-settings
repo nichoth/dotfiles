@@ -15,17 +15,32 @@
 			},
 			"key": "1bd7ee1ce72751da4e64129f6d32db41",
 			"label": "\\i"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"current": "3",
+					"padding": "1",
+					"step": "1"
+				},
+				"command": "insert_nums",
+				"text": "\\i3"
+			},
+			"key": "4ef7939524b7fe2cf3e56a4077a56bbd",
+			"label": "\\i3"
 		}
 	],
 	"last_command":
 	{
 		"args":
 		{
-			"current": "1",
+			"current": "3",
 			"padding": "1",
 			"step": "1"
 		},
 		"command": "insert_nums",
-		"text": "\\i"
+		"text": "\\i3"
 	}
 }

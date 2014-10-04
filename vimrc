@@ -127,9 +127,10 @@ endif
 set ignorecase
 set smartcase
 set tabstop=4
+set linebreak
 
 " Shortcut - enter inserts new line in command mode
-nmap <CR> o<Esc>j
+"nmap <CR> o<Esc>j
 
 " No line-wrapping
 set nowrap
@@ -158,7 +159,7 @@ endif
 
 " Limit line-length to 80 columns by highlighting col 81 onward
 if exists("+colorcolumn")
-  set colorcolumn=81
+  set colorcolumn=78
 endif
 
 " Highlight current line
