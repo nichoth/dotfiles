@@ -159,7 +159,7 @@ endif
 
 " Limit line-length to 78 columns by highlighting col 79 onward
 if exists("+colorcolumn")
-  set colorcolumn=78
+  set colorcolumn=79
 endif
 
 " Highlight current line

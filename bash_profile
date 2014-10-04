@@ -78,8 +78,8 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 # Functions
 # ______________________________________________________________________________
 
-#mkdir and then cd to the new dir
-#longhand version for reference: mkdir -p "newdir" && cd "$_"
+# mkdir and then cd to the new dir
+# longhand version for reference: mkdir -p "newdir" && cd "$_"
 function md () { mkdir -p "$@" && cd "$@"; }
 
 # Syntax-highlight JSON strings or files
@@ -116,6 +116,15 @@ source ~/.git-completion.bash
 
 #add git branch to command prompt
 source ~/.git-prompt.sh
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="${yellow}";
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto";
+
+# Make vim the default editor
+export EDITOR="vim";
 
 # Prompt
 YELLOW="\[\033[0;33m\]"
