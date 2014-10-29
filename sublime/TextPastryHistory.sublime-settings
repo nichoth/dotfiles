@@ -30,17 +30,61 @@
 			},
 			"key": "4ef7939524b7fe2cf3e56a4077a56bbd",
 			"label": "\\i3"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"current": "6",
+					"padding": "1",
+					"step": "1"
+				},
+				"command": "insert_nums",
+				"text": "\\i6"
+			},
+			"key": "6dba6aa30c952f973e84b8f6ec731c09",
+			"label": "\\i6"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "6",
+					"threshold": 3
+				},
+				"command": "text_pastry_insert_text",
+				"text": "6"
+			},
+			"key": "1679091c5a880faf6fb5e6087eb1b2dc",
+			"label": "6"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"current": "6",
+					"padding": "1",
+					"step": "1"
+				},
+				"command": "insert_nums",
+				"text": "\\i(6)"
+			},
+			"key": "b2d0ac712c31cf635e4c352bd38cb5e7",
+			"label": "\\i(6)"
 		}
 	],
 	"last_command":
 	{
 		"args":
 		{
-			"current": "3",
+			"current": "6",
 			"padding": "1",
 			"step": "1"
 		},
 		"command": "insert_nums",
-		"text": "\\i3"
+		"text": "\\i(6)"
 	}
 }

@@ -34,7 +34,7 @@ Plugin 'gmarik/Vundle.vim'
 " --------------------------
 
 "Plugin 'godlygeek/tabular'
-"Plugin 'plasticboy/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()            " required
 
@@ -167,3 +167,9 @@ set cursorline
 
 " Don’t keep results highlighted after searching
 set nohlsearch
+
+" no auto comment
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" markdown
+au BufNewFile,BufRead *.md  setf markdown

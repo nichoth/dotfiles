@@ -38,6 +38,9 @@ alias tree='tree -C --dirsfirst'
 
 # ssh to ada
 alias ada='ssh thonic29@ada.evergreen.edu'
+function scpada () {
+	scp "$@" thonic29@ada.evergreen.edu:;
+}
 
 # function diff {
 #    /usr/bin/diff -u "$@" | colordiff;
