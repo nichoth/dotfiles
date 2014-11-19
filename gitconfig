@@ -16,7 +16,8 @@
 	unstage = reset --
 	slog = log --graph --oneline --all --decorate
 	s = status
-
+	first = !git rev-list HEAD | tail -n 1
+	fdiff = !git diff `git first`
 	# View the current working tree status using the short format
 	ss = status -s
 
