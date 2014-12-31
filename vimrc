@@ -33,8 +33,9 @@ Plugin 'gmarik/Vundle.vim'
 
 " --------------------------
 
-"Plugin 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled=1
 
 call vundle#end()            " required
 
@@ -172,4 +173,4 @@ set nohlsearch
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " markdown
-au BufNewFile,BufRead *.md  setf markdown
+"au BufNewFile,BufRead *.md  setf markdown

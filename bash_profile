@@ -76,6 +76,9 @@ alias c="tr -d '\n' | pbcopy"
 #MAMP
 alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot"
 
+# For github jekyll
+# Run this in the github pages dir and it will serve at localhost:4000.
+alias gityll="bundle exec jekyll serve"
 
 
 # Functions
