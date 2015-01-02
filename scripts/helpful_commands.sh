@@ -54,3 +54,5 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
+# fix key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
