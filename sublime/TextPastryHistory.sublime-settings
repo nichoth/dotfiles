@@ -74,17 +74,28 @@
 			},
 			"key": "b2d0ac712c31cf635e4c352bd38cb5e7",
 			"label": "\\i(6)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "i(100,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "i(100,1)"
+			},
+			"key": "f91f6baefde009c31ada50c9cb8e99b8",
+			"label": "i(100,1)"
 		}
 	],
 	"last_command":
 	{
 		"args":
 		{
-			"current": "6",
-			"padding": "1",
-			"step": "1"
+			"text": "i(100,1)"
 		},
-		"command": "insert_nums",
-		"text": "\\i(6)"
+		"command": "text_pastry_step",
+		"text": "i(100,1)"
 	}
 }

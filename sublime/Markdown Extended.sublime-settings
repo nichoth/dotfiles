@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		"md"
+	],
+  "word_wrap": true,
+  "wrap_width": 80,
+  "spell_check": true
+}

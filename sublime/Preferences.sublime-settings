@@ -1,4 +1,5 @@
 {
+	"caret_style": "solid",
 	"color_scheme": "Packages/User/Slush & Poppies (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -14,7 +15,9 @@
 	"folder_exclude_patterns":
 	[
 		".git",
-		".sass-cache"
+		".sass-cache",
+		"tmp/*",
+		"db"
 	],
 	"font_size": 13,
 	"highlight_line": true,

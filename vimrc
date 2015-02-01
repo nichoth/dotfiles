@@ -174,3 +174,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " markdown
 "au BufNewFile,BufRead *.md  setf markdown
+
+set noai
+set shiftwidth=4
