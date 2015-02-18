@@ -2,15 +2,11 @@
 	"in_process_packages":
 	[
 	],
-	"installed_dependencies":
-	[
-		"0_package_control_loader",
-		"bz2"
-	],
 	"installed_packages":
 	[
 		"4GL",
 		"Auto Semi-Colon",
+		"Better CoffeeScript",
 		"Better JavaScript",
 		"Colorsublime",
 		"DocBlockr",
@@ -22,6 +18,7 @@
 		"Markdown Preview",
 		"Package Control",
 		"Python PEP8 Autoformat",
+		"ReactJS",
 		"Sass",
 		"Siteleaf Liquid Syntax",
 		"SublimeLinter",
