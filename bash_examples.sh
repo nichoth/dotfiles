@@ -32,4 +32,5 @@ sips -Z 640 *.jpg
 # find:            (\d+)
 # replace with:    '\1'
 
-
+# gitignore cli tool
+gibo Python TextMate >> .gitignore

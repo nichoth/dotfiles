@@ -58,6 +58,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # my notes on bash
 alias examples="cat ${HOME}/.dotfiles/bash_examples.sh"
+alias code="cd ~/code"
 
 #show hidden files in finder
 alias show='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
