@@ -84,6 +84,10 @@ alias gityll="bundle exec jekyll serve"
 # Ember
 alias em="ember"
 
+# gibo (gitignore tool)
+# for JS modules
+alias gibojs="gibo SublimeText OSX Node Sass"
+
 # Use local gulp instead of global
 # alias gulp='node_modules/.bin/gulp'
 
