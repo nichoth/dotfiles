@@ -175,5 +175,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " markdown
 "au BufNewFile,BufRead *.md  setf markdown
 
+filetype plugin indent on
 set noai
 set shiftwidth=4
+set softtabstop=4
+set expandtab

@@ -86,10 +86,22 @@ alias em="ember"
 
 # gibo (gitignore tool)
 # for JS modules
-alias gibojs="gibo SublimeText OSX Node Sass"
+alias gibojs="gibo SublimeText OSX Node Sass >> .gitignore && cat ~/.dotfiles/gitignore-node >> .gitignore"
 
 # Use local gulp instead of global
 # alias gulp='node_modules/.bin/gulp'
+
+# copy and paste
+alias pbp="pbpaste"
+alias pbc="pbcopy"
+
+# Markdown table of contents generator
+alias mdtoc="gh-md-toc"
+
+# set npm default semver range. Tilde:  ~1.2.3 means 1.2.x, with x > 3.
+# Carat: ^1.2.3 means 1.x.y where x > 2, y > 3.
+npmtilde="npm config set save-prefix='~'"
+npmcarat="npm config set save-prefix='^'"
 
 # Functions
 # ______________________________________________________________________________
