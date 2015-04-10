@@ -100,8 +100,11 @@ alias mdtoc="gh-md-toc"
 
 # set npm default semver range. Tilde:  ~1.2.3 means 1.2.x, with x > 3.
 # Carat: ^1.2.3 means 1.x.y where x > 2, y > 3.
-npmtilde="npm config set save-prefix='~'"
-npmcarat="npm config set save-prefix='^'"
+alias npmtilde="npm config set save-prefix='~'"
+alias npmcarat="npm config set save-prefix='^'"
+
+# print package.json template
+alias catnpm="cat ~/.dotfiles/example-package.json"
 
 # Functions
 # ______________________________________________________________________________
