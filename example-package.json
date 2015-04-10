@@ -1,5 +1,5 @@
 {
-  "name": "ham",
+  "name": "",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "author": "Nick Thomas <nichoth@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nichoth/ham.git"
+    "url": ""
   },
   "license": "ISC",
   "peerDependencies": {},
