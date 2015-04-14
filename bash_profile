@@ -103,8 +103,10 @@ alias mdtoc="gh-md-toc"
 alias npmtilde="npm config set save-prefix='~'"
 alias npmcarat="npm config set save-prefix='^'"
 
-# print package.json template
+# package.json templates
 alias catnpm="cat ~/.dotfiles/example-package.json"
+alias catsass="cat ~/.dotfiles/sass-tasks"
+alias cattar="cat ~/.dotfiles/gh-tarball"
 
 # Functions
 # ______________________________________________________________________________
