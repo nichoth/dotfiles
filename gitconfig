@@ -22,7 +22,9 @@
 	fdiff = !git diff `git first`
 	# View the current working tree status using the short format
 	ss = status -s
-
+    first-sha = "!git rev-list --all | tail -n 1"
+    child-sha = "!git rev-list HEAD..master | tail -n 1"
+    next = "!git co $(git child-sha)"
 	co = checkout
 	wdiff = diff --color-words
 	logad = log --pretty=format:'%C(yellow)%h %Creset %ad %an %Cgreen%d %Creset%s' --date=short
