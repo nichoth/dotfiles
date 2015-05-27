@@ -33,6 +33,15 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 # tree
 alias tree='tree -C --dirsfirst'
 
+# create github repo with description from package.json
+hub() {
+    if [[ $@ == "create" ]]; then
+        command hub create -d "$(package-field description -s)"
+    else
+        command hub "$@"
+    fi
+}
+
 # diff
 # alias diff='/usr/bin/diff -u'
 
@@ -194,3 +203,9 @@ export PATH=$JAVA_HOME/bin:$PATH
 export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.2
 export M2=$M2_HOME/bin
 export PATH=$M2:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# postgres stuff
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin

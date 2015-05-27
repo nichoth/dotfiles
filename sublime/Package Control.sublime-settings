@@ -6,6 +6,7 @@
 	[
 		"4GL",
 		"Auto Semi-Colon",
+		"Babel",
 		"Better CoffeeScript",
 		"Better JavaScript",
 		"Colorsublime",
@@ -16,6 +17,7 @@
 		"Handlebars",
 		"HTML-CSS-JS Prettify",
 		"JSONLint",
+		"LiveStyle",
 		"Markdown Extended",
 		"Markdown Preview",
 		"Package Control",
