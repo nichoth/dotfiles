@@ -118,7 +118,7 @@ alias catsass="cat ~/.dotfiles/sass-tasks"
 alias cattar="cat ~/.dotfiles/gh-tarball"
 
 # download wordpress to current dir
-curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C .
+alias wpinstall="curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C ."
 
 # Functions
 # ______________________________________________________________________________
