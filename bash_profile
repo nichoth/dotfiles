@@ -120,7 +120,7 @@ alias cattar="cat ~/.dotfiles/gh-tarball"
 # download wordpress to current dir
 alias wpinstall="curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C ."
 
-function htmlbin() {
+function demo() {
     html-inline "$@" | \
     curl -sT- https://htmlb.in
 }
