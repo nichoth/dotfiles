@@ -116,6 +116,8 @@ alias npmcarat="npm config set save-prefix='^'"
 alias catnpm="cat ~/.dotfiles/example-package.json"
 alias catsass="cat ~/.dotfiles/sass-tasks"
 alias cattar="cat ~/.dotfiles/gh-tarball"
+alias catserver="cat ~/.dotfiles/server.js"
+alias catss="cat ~/.dotfiles/simple-server.js"
 
 # download wordpress to current dir
 alias wpinstall="curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C ."
