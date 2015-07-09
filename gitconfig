@@ -14,7 +14,7 @@
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 [alias]
 	unstage = reset --
-    tacking = ls-tree -r master --name-only
+    tracking = ls-tree -r master --name-only
 	unwatch = rm --cached 
 	slog = log --graph --oneline --all --decorate
 	s = status
