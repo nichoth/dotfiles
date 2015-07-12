@@ -175,10 +175,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " markdown
 "au BufNewFile,BufRead *.md  setf markdown
 
+" indentation
 filetype plugin indent on
-set noai
-set shiftwidth=4
-set softtabstop=4
+set autoindent
+set smartindent
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 Plugin 'mattn/emmet-vim'
