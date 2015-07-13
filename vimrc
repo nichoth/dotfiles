@@ -175,6 +175,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " markdown
 "au BufNewFile,BufRead *.md  setf markdown
 
+" haskell
+autocmd FileType haskell setlocal shiftwidth=2 tabstop=2
+
 " indentation
 filetype plugin indent on
 set autoindent
