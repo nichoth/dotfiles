@@ -19,7 +19,7 @@
 		"tmp/*",
 		"db"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[

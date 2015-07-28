@@ -137,7 +137,7 @@ function md () { mkdir -p "$@" && cd "$@"; }
 
 # Syntax-highlight JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-function json() {
+function pjson() {
   if [ -t 0 ]; then # argument
     python -mjson.tool <<< "$*" | pygmentize -l javascript;
   else # pipe
