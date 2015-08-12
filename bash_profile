@@ -97,6 +97,9 @@ alias em="ember"
 # for JS modules
 alias gibojs="gibo SublimeText OSX Node Sass >> .gitignore && cat ~/.dotfiles/gitignore-node >> .gitignore"
 
+# pipe to base64 encode image and print to stdout
+alias base64="openssl base64 | tr -d '\n'"
+
 # Use local gulp instead of global
 # alias gulp='node_modules/.bin/gulp'
 
