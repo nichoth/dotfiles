@@ -6,8 +6,6 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
-
-
 # Aliases
 # ______________________________________________________________________________
 
@@ -26,6 +24,10 @@ alias la='ls -a'
 alias ll='ls -l'
 #alias ls='ls -F' # show trailing slashes on directories
 alias lh='ls -d .??*' # show only hidden files
+# `brew install coreutils` -- gls command
+lsp() {
+  gls -C --color=always "$@" | less -R;
+}
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"

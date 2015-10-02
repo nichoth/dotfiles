@@ -1,6 +1,7 @@
 {
 	"caret_style": "solid",
-	"color_scheme": "Packages/User/Slush & Poppies (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Slush & Poppies (SL).tmTheme",
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -19,7 +20,7 @@
 		"tmp/*",
 		"db"
 	],
-	"font_size": 14,
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[
