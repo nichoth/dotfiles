@@ -1,5 +1,0 @@
-{
-  "preferences" : {
-    "filter.commentAfter" : "  <!-- /<%= attr(\"id\", \"#\") %><%= attr(\"class\", \".\") %> -->"
-  }
-}

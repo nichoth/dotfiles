@@ -1,2 +1,0 @@
-"sass": "sass main.scss style.css",
-"sass-watch": "sass --watch main.scss:style.css"
