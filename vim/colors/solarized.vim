@@ -324,7 +324,6 @@ else
 "   let s:base01      = "2".s:bright
 "   let s:base00      = "3".s:bright
 "   let s:base0       = "4".s:bright
-"
 "   let s:base1       = "6".s:bright
 "   let s:base2       = "7"
 "   let s:base3       = "7".s:bright

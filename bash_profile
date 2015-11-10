@@ -14,10 +14,8 @@ alias objcopy="gobjcopy"
 alias objdump="gobjdump -M intel"
 
 #shortcuts
-alias cnc='cd ~/Desktop/fall-2014/'
 alias htdocs='cd /Applications/MAMP/htdocs/'
 alias dot="cd ${HOME}/.dotfiles"
-alias spref="cd /Users/nick/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
 
 # ls
 alias la='ls -a'
@@ -97,7 +95,7 @@ alias em="ember"
 
 # gibo (gitignore tool)
 # for JS modules
-alias gibojs="gibo SublimeText OSX Node Sass >> .gitignore && cat ~/.dotfiles/gitignore-node >> .gitignore"
+alias gibojs="gibo SublimeText OSX Node Sass >> .gitignore && echo "bundle.js" >> .gitignore"
 
 # pipe to base64 encode image and print to stdout
 alias base64="openssl base64 | tr -d '\n'"
@@ -118,9 +116,8 @@ alias npmtilde="npm config set save-prefix='~'"
 alias npmcarat="npm config set save-prefix='^'"
 
 # package.json templates
-alias catnpm="cat ~/.dotfiles/example-package.json"
-alias catsass="cat ~/.dotfiles/sass-tasks"
-alias cattar="cat ~/.dotfiles/gh-tarball"
+#alias catnpm="cat ~/.dotfiles/example-package.json"
+alias cattar="echo https://github.com/nichoth/repo/tarball/master"
 alias catserver="cat ~/.dotfiles/server.js"
 alias catss="cat ~/.dotfiles/simple-server.js"
 alias cathtml="cat ~/.dotfiles/_index.html"
@@ -207,29 +204,10 @@ if [ $? -eq 1 ] ; then
 	export PATH="$MAMP_PATH:$PATH"
 fi
 
-# Add wp-cli auto completion
-source ~/.wp-completion.bash
-
 # z script
 source ~/.z.sh
 
-# for google app engine java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.2
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# postgres stuff
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
 export PATH=$PATH:~/bin
-
-export NVM_DIR="/Users/nick/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ###-begin-npm-completion-###
 #
 # npm command completion script
@@ -287,3 +265,7 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+case $- in
+   *i*) source ~/.bashrc
+esac
