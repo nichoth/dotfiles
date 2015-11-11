@@ -2,9 +2,16 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+execute pathogen#infect()
+
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Jump to the last cursor position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 " Tabs, indentation and lines
 filetype plugin indent on
