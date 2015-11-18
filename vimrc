@@ -110,4 +110,14 @@ endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 
 
+" file browser view
+let g:netrw_liststyle=3
+
+" markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+"au BufRead,BufNewFile *.md setlocal textwidth=78
+autocmd Filetype markdown setlocal wrap
+autocmd Filetype markdown setlocal linebreak
+autocmd Filetype markdown setlocal nolist
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript', 'js=javascript']
 
