@@ -83,3 +83,4 @@ node_modules
 
 *.db
 *.swp
+vim/swaps/

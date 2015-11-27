@@ -133,6 +133,14 @@ function demo() {
 # Functions
 # ______________________________________________________________________________
 
+# commit, patch, publish
+function cpp() {
+  git add --all && \
+  git commit -m "$@" && \
+  npm version patch && \
+  npm publish;
+}
+
 # mkdir and then cd to the new dir
 # longhand version for reference: mkdir -p "newdir" && cd "$_"
 function md () { mkdir -p "$@" && cd "$@"; }

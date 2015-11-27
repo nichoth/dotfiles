@@ -14,12 +14,13 @@ if has("autocmd")
 endif
 
 " Tabs, indentation and lines
-filetype plugin indent on
+"filetype plugin indent on
 " 2 spaces please
 set expandtab
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+set smartindent
 " No line-wrapping
 set nowrap
 
@@ -108,6 +109,10 @@ function! StripWhitespace()
   call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
+
+
+" strip trailing spaes on save
+autocmd BufWritePre * :call StripWhitespace()
 
 
 " file browser view
