@@ -125,13 +125,19 @@ alias cathtml="cat ~/.dotfiles/_index.html"
 # download wordpress to current dir
 alias wpinstall="curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C ."
 
+# Functions
+# ______________________________________________________________________________
+
+
 function demo() {
     html-inline "$@" | \
     curl -sT- https://htmlb.in
 }
 
-# Functions
-# ______________________________________________________________________________
+# preview a mardown file
+function mdp() {
+  cat "$@" | vmd
+}
 
 # commit, patch, publish
 function cpp() {
