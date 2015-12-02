@@ -90,9 +90,6 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 # Run this in the github pages dir and it will serve at localhost:4000.
 alias gityll="bundle exec jekyll serve"
 
-# Ember
-alias em="ember"
-
 # gibo (gitignore tool)
 # for JS modules
 alias gibojs="gibo SublimeText OSX Node Sass >> .gitignore && echo "bundle.js" >> .gitignore"
@@ -121,6 +118,7 @@ alias cattar="echo https://github.com/nichoth/repo/tarball/master"
 alias catserver="cat ~/.dotfiles/server.js"
 alias catss="cat ~/.dotfiles/simple-server.js"
 alias cathtml="cat ~/.dotfiles/_index.html"
+alias catsass="cat ~/.dotfiles/_node-sass.js"
 
 alias npmpp="npm version patch && npm publish"
 
