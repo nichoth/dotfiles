@@ -122,8 +122,7 @@ alias catserver="cat ~/.dotfiles/server.js"
 alias catss="cat ~/.dotfiles/simple-server.js"
 alias cathtml="cat ~/.dotfiles/_index.html"
 
-# download wordpress to current dir
-alias wpinstall="curl https://wordpress.org/latest.tar.gz | tar --strip-components=1 -zxf- -C ."
+alias npmpp="npm version patch && npm publish"
 
 # Functions
 # ______________________________________________________________________________
@@ -137,14 +136,6 @@ function demo() {
 # preview a mardown file
 function mdp() {
   cat "$@" | vmd
-}
-
-# commit, patch, publish
-function cpp() {
-  git add --all && \
-  git commit -m "$@" && \
-  npm version patch && \
-  npm publish;
 }
 
 # mkdir and then cd to the new dir
