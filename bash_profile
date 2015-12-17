@@ -122,6 +122,8 @@ alias catsass="cat ~/.dotfiles/_node-sass.js"
 
 alias npmpp="npm version patch && npm publish"
 
+alias datep="date +\"%m-%d-%y\""
+
 # Functions
 # ______________________________________________________________________________
 
