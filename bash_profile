@@ -133,6 +133,10 @@ function demo() {
     curl -sT- https://htmlb.in
 }
 
+function pflix() {
+    peerflix "$@" -f ~/Downloads/peerflix -a
+}
+
 # preview a mardown file
 function mdp() {
   cat "$@" | vmd
