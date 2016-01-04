@@ -45,6 +45,9 @@ hub() {
 # diff
 # alias diff='/usr/bin/diff -u'
 
+# Mac OS version
+alias vers='sw_vers'
+
 # ssh to ada
 alias ada='ssh thonic29@ada.evergreen.edu'
 function scpada () {
