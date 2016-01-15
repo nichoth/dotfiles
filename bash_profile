@@ -80,7 +80,7 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Fin
 alias startftp='sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist'
 alias stopftp='sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist'
 
-#copies the working path to the clipboard
+# copy the working path to the clipboard
 alias cpwd="pwd | tr -d '\n' | pbcopy"
 
 # Trim new lines and copy to clipboard
@@ -131,16 +131,21 @@ alias datep="date +\"%m-%d-%y\""
 # ______________________________________________________________________________
 
 
+# demo ./example/index.html
 function demo() {
-    html-inline "$@" | \
-    curl -sT- https://htmlb.in
+    DEMO_DIR=${2-${PWD##*/}}  # use arg 2 or cwd
+    DEMO_PATH="$HOME/code/demos/$DEMO_DIR"
+    mkdir -p $DEMO_PATH
+    html-inline "$1" > "$DEMO_PATH/index.html" && \
+    surge ~/code/demos &> /dev/null
+    echo http://$(cat ~/code/demos/CNAME)/$DEMO_DIR
 }
 
 function pflix() {
     peerflix "$@" -f ~/Downloads/peerflix -a
 }
 
-# preview a mardown file
+# preview a markdown file
 function mdp() {
   cat "$@" | vmd
 }
