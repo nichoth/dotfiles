@@ -36,7 +36,8 @@ alias tree='tree -C --dirsfirst'
 # create github repo with description from package.json
 hub() {
     if [[ $@ == "create" ]]; then
-        command hub create -d "$(package-field description -s)"
+        command hub create -d "$(package-field description -s)" \
+          -h "$(package-field homepage -s)"
     else
         command hub "$@"
     fi
