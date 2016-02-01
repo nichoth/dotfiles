@@ -112,7 +112,8 @@ noremap <leader>ss :call StripWhitespace()<CR>
 
 
 " strip trailing spaes on save
-autocmd BufWritePre * :call StripWhitespace()
+let blacklist = ['markdown']
+autocmd BufWritePre * if index(blacklist, &ft) < 0 | :call StripWhitespace()
 
 
 " file browser view
