@@ -131,6 +131,17 @@ alias datep="date +\"%m-%d-%y\""
 # Functions
 # ______________________________________________________________________________
 
+# publish to gh pages. If it's rejected, do this:
+#     git push origin `git subtree split --prefix build_folder master`:gh-pages --force
+# ex: ghpages public
+function ghpages() {
+  if [ -z "$1" ]
+  then
+    echo "Which folder do you want to deploy to GitHub Pages?"
+    exit 1
+  fi
+  git subtree push --prefix $1 origin gh-pages
+}
 
 # demo ./example/index.html
 function demo() {
