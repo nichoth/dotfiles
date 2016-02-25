@@ -126,7 +126,11 @@ alias catsass="cat ~/.dotfiles/_node-sass.js"
 
 alias npmpp="npm version patch && npm publish"
 
+# pretty date
 alias datep="date +\"%m-%d-%y\""
+
+# minify images
+alias minpng="imagemin --plugin pngquant"
 
 # Functions
 # ______________________________________________________________________________
