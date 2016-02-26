@@ -137,3 +137,5 @@ let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript', 'j
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
+" emmet shortcut
+let g:user_emmet_leader_key='<C-F>'
