@@ -149,12 +149,12 @@ function ghpages() {
 
 # demo ./example/index.html
 function demo() {
-    DEMO_DIR=${2-${PWD##*/}}  # use arg 2 or cwd
-    DEMO_PATH="$HOME/code/demos/$DEMO_DIR"
+    DEMO_DIR=${2-${PWD##*/}}  # use arg 2 or cwd name
+    DEMO_PATH="$HOME/code/demos/public/$DEMO_DIR"
     mkdir -p $DEMO_PATH
     html-inline "$1" > "$DEMO_PATH/index.html" && \
-    surge ~/code/demos &> /dev/null
-    echo http://$(cat ~/code/demos/CNAME)/$DEMO_DIR
+    surge ~/code/demos/public &> /dev/null
+    echo http://$(cat ~/code/demos/public/CNAME)/$DEMO_DIR
 }
 
 function pflix() {
