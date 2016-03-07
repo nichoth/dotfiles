@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/nick/code/slog-db-level/example'
 let g:netrw_dirhist_2='/Users/nick/code/vdom-crud-li/example'
+let g:netrw_dirhist_3='/Users/nick/websites/nichoth.github.io/site/node_modules/bourbon-neat/app/assets/stylesheets/settings'
+let g:netrw_dirhist_4='/Users/nick/websites/nichoth.github.io/site/style'
+let g:netrw_dirhist_5='/Users/nick/websites/nichoth.github.io/site'
+let g:netrw_dirhist_6='/Users/nick/websites/nichoth.github.io/site/public'

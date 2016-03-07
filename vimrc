@@ -127,6 +127,9 @@ autocmd Filetype markdown setlocal linebreak
 autocmd Filetype markdown setlocal nolist
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript', 'js=javascript']
 
+" .xjs extension -- use for JS template literals
+au BufRead,BufNewFile *.xjs setfiletype html
+
 " syntastic plugin
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
