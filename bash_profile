@@ -30,6 +30,9 @@ lsp() {
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
+# digitalocean
+alias sshdo="ssh nick@104.131.159.55"
+
 # tree
 alias tree='tree -C --dirsfirst'
 
