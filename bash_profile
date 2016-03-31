@@ -126,6 +126,7 @@ alias catserver="cat ~/.dotfiles/server.js"
 alias catss="cat ~/.dotfiles/simple-server.js"
 alias cathtml="cat ~/.dotfiles/_index.html"
 alias catsass="cat ~/.dotfiles/_node-sass.js"
+alias pkg="echo \"{}\" >> package.json"
 
 alias npmpp="npm version patch && npm publish"
 
@@ -305,3 +306,6 @@ fi
 case $- in
    *i*) source ~/.bashrc
 esac
+
+# for go
+export PATH=$PATH:/usr/local/go/bin
