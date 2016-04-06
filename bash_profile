@@ -126,7 +126,9 @@ alias catserver="cat ~/.dotfiles/server.js"
 alias catss="cat ~/.dotfiles/simple-server.js"
 alias cathtml="cat ~/.dotfiles/_index.html"
 alias catsass="cat ~/.dotfiles/_node-sass.js"
+alias mul="echo ×"
 alias pkg="echo \"{}\" >> package.json"
+alias svg="cat ~/.dotfiles/_svg.template"
 
 alias npmpp="npm version patch && npm publish"
 
