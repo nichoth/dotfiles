@@ -128,7 +128,8 @@ alias cathtml="cat ~/.dotfiles/_index.html"
 alias catsass="cat ~/.dotfiles/_node-sass.js"
 alias mul="echo ×"
 alias pkg="echo \"{}\" >> package.json"
-alias svg="cat ~/.dotfiles/_svg.template"
+alias svg="cat ~/.dotfiles/svg-templates/_svg.template"
+alias svg3="cat ~/.dotfiles/svg-templates/_svg-triangle.template"
 
 alias npmpp="npm version patch && npm publish"
 
