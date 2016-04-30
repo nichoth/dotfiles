@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/nick/code/ini-cli'
+let g:netrw_dirhist_2='/Users/nick/websites/tiny-thunder/site/src/lib/view/checkout'
+let g:netrw_dirhist_3='/Users/nick/websites/tiny-thunder/site/src/lib/view/components'
