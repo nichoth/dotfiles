@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/nick/code/ini-cli'
-let g:netrw_dirhist_2='/Users/nick/websites/tiny-thunder/site/src/lib/view/checkout'
-let g:netrw_dirhist_3='/Users/nick/websites/tiny-thunder/site/src/lib/view/components'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/nick/code/look/src'
+let g:netrw_dirhist_2='/Users/nick/code/look/src/style'
+let g:netrw_dirhist_3='/Users/nick/code/look/src'
+let g:netrw_dirhist_4='/Users/nick/code/look/src/view'
+let g:netrw_dirhist_5='/Users/nick/code/look/src/router'
+let g:netrw_dirhist_6='/Users/nick/code/look/src'
+let g:netrw_dirhist_7='/Users/nick/code/look/src/router'
+let g:netrw_dirhist_8='/Users/nick/code/look/src/router/routes'
+let g:netrw_dirhist_9='/Users/nick/code/look/src'

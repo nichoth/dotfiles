@@ -14,12 +14,12 @@ if has("autocmd")
 endif
 
 " Tabs, indentation and lines
-"filetype plugin indent on
-" 2 spaces please
+filetype plugin indent on
+" 4 spaces please
 set expandtab
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set smartindent
 " No line-wrapping
 set nowrap
@@ -63,9 +63,9 @@ if exists("+relativenumber")
 else
     set number
 endif
-" Limit line-length to 78 columns by highlighting col 79 onward
+" Limit line-length to 77 columns by highlighting col 78 onward
 if exists("+colorcolumn")
-    set colorcolumn=79
+    set colorcolumn=78
 endif
 " Highlight current line
 set cursorline
@@ -127,18 +127,40 @@ autocmd Filetype markdown setlocal linebreak
 autocmd Filetype markdown setlocal nolist
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'javascript', 'js=javascript']
 
-" .xjs extension -- use for JS template literals
-au BufRead,BufNewFile *.xjs setfiletype html
-
-" syntastic plugin
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-""set statusline+=%*
-"
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+autocmd Filetype json setlocal tabstop=2
+autocmd Filetype css setlocal tabstop=2
+autocmd Filetype scss setlocal tabstop=2
+autocmd Filetype html setlocal tabstop=2
 
 " emmet shortcut
-let g:user_emmet_leader_key='<C-F>'
+let g:user_emmet_leader_key='<C-E>'
+
+" commentary
+autocmd FileType javascript setlocal commentstring=//\ %s
+
+" syntastic plugin
+" set statusline =%#warningmsg#
+" set statusline =%{SyntasticStatuslineFlag()}
+" set statusline =%*
+let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" set statusline =%#warningmsg#
+" set statusline =%{SyntasticStatuslineFlag()}
+" set statusline =%*
+" let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_error_symbol = '>'
+" let g:syntastic_style_error_symbol = '⁉️'
+" let g:syntastic_warning_symbol = '⚠️'
+" let g:syntastic_style_warning_symbol = '💩 '
+" highlight link SyntasticErrorSign SignColumn
+" highlight link SyntasticWarningSign SignColumn
+" highlight link SyntasticStyleErrorSign SignColumn
+" highlight link SyntasticStyleWarningSign SignColumn
